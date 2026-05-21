@@ -58,13 +58,22 @@ input[type="radio"],
 input[type="checkbox"] {
   width: auto;
 }
-input[type="color"] {
+input[type="color"],
+input[type="file"],
+input[type="text"] {
   width: 40px;
   padding: 0 5px;
 }
 label {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+input[type="tel"]{
+    margin-bottom: 0;
+}
+small{
+    margin-bottom: 20px;
+    display: inline-block;
 }
 input:invalid, select:invalid, textarea:invalid {
   border-color: red;
