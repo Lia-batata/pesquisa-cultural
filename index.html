@@ -23,17 +23,20 @@
                 <fieldset>
                     <!-- Adiciona os dados pessoais-->
                     <label for="name">Nome</label>
-                    <input id="name" type="text" name="userName" required aria-describedby="nameHelp">
-                    <small id="nameHelp">Preencha com o nome completo</small>
+                    <input id="name" type="text" name="userName" aria-describedby="nameHelp"required>
+                    <small id="nameHelp">Preencha com o nome completo do usuário.</small>
                     <br>
                     <label for="age">Idade</label>
-                    <input id="age" type="number" name="userAge" min="12" max="100" required>
+                    <input id="age" type="number" name="userAge" min="12" max="100" aria-describedby="ageHelp" required>
+                    <small id="ageHelp">Preencha com os dígitos da idade do usuário: apenas números.</small>
                     <br>
                     <label for="birthDate">Data de nascimento</label>
-                    <input id="birthDate" type="date" name="userBirthDate">
+                    <input id="birthDate" type="date" name="userBirthDate" aria-describedby="birthHelp">
+                    <small id="birthHelp">Preencha com os dígitos da data de nascimento: apenas números, sem espaços ou hífen.</small>
                     <br>
                     <label for="email">Email</label>
-                    <input id="email" type="email" name="userEmail" required>
+                    <input id="email" type="email" name="userEmail" aria-describedby="emailHelp" required>
+                    <small id="emailHelp">Preencha com os dígitos do email: pode digítar letras, números e caracteres especiais.</small>
                     <br>
                     <label for="phoneNumber">Telefone</label>
                     <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hifen" aria-describedby="phoneHelp">
