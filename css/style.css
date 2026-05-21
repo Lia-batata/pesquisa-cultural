@@ -3,9 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --cor-texto: #333333;
+  --cor-fundo: #ffffff;
+}
+
+.theme-high-contrast {
+  --cor-texto: #000000;
+  --cor-fundo: #ffffff;
+}
 body {
-  background-color: #F9F9F9;
   font-family: 'Work Sans', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
 }
 main {
   width: 100%;
@@ -19,13 +29,18 @@ header {
 img {
   width: 100px;
 }
+html {
+  font-size: 100%; /* ajustável pelo usuário */
+}
 h1 {
   font-family: 'Fira Sans', sans-serif;
   text-align: center;
+  font-size: 2rem; 
 }
 p {
   margin-bottom: 15px;
   font-weight: bold;
+  font-size: 1rem;
 }
 form {
   background-color: #FFFFFF;
@@ -58,9 +73,7 @@ input[type="radio"],
 input[type="checkbox"] {
   width: auto;
 }
-input[type="color"],
-input[type="file"],
-input[type="text"] {
+input[type="color"] {
   width: 40px;
   padding: 0 5px;
 }
@@ -68,7 +81,12 @@ label {
   display: inline-block;
   margin-bottom: 10px;
 }
-input[type="tel"]{
+input[type="tel"],
+input[type="file"],
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"]{
     margin-bottom: 0;
 }
 small{
