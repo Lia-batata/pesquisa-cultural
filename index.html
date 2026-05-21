@@ -23,7 +23,8 @@
                 <fieldset>
                     <!-- Adiciona os dados pessoais-->
                     <label for="name">Nome</label>
-                    <input id="name" type="text" name="userName" required>
+                    <input id="name" type="text" name="userName" required aria-describedby="nameHelp">
+                    <small id="nameHelp">Preencha com o nome completo</small>
                     <br>
                     <label for="age">Idade</label>
                     <input id="age" type="number" name="userAge" min="12" max="100" required>
